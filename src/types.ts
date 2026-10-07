@@ -2,7 +2,7 @@
 // TYPE (labels) allowed values 
 
   // types
-export type PostStatus = 'idea' | ' draft' | 'writing' | 'editing' | 'filming' | 'scheduled' | 'posted' ;
+export type PostStatus = 'idea' | 'draft' | 'writing' | 'editing' | 'filming' | 'scheduled' | 'posted' ;
 
 // platform type
 export type Platform = 'Instagram' | 'TikTok' | 'YouTube' | 'LinkedIn' | 'Threads' | 'X' | 'Facebook';
@@ -12,7 +12,17 @@ export type ContentType = | 'Reel' | 'Carousel' | 'Story' | 'Long-form video' | 
 
 
 // turn the list above into arrays so we can loop through them to build our drop down menus
+export const POST_STATUSES: PostStatus[] = [
+  'idea', 'draft', 'writing', 'editing', 'filming', 'scheduled', 'posted',
+];
 
+export const PLATFORMS: Platform[] = [
+  'Instagram', 'TikTok', 'YouTube', 'LinkedIn', 'Threads', 'X', 'Facebook',
+];
+
+export const CONTENT_TYPES: ContentType[] = [
+  'Reel', 'Carousel', 'Story', 'Long-form video', 'Text post', 'Thread',
+];
 
 // INTERFACE - objects shapes 
   // user
