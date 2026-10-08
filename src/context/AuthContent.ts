@@ -1,4 +1,4 @@
-// impprt createContent + Yser type
+// import createContent + User type
 import { createContext } from "react";
 import type { User } from "../types";
 
