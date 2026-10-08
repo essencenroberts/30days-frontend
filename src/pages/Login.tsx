@@ -1,7 +1,7 @@
 // now this is the login page users see after logging in
 
 import { useState } from "react";
-import type { FormEvent } from "react";
+import type { SubmitEvent } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import type { Location } from "react-router-dom";
 import useAuth from "../hooks/useAuth";
@@ -83,6 +83,19 @@ function Login() {
           value={password}
           onChange={(event) => setPassword(event.target.value)}
         />
+
+        {/* erorr for screen readers */}
+        {error && (
+          <p
+            role="alert"
+            className="rounded-xl bg-red-50 px-4 py-3 text-sm text-red-700"
+          >{error}</p>
+        )}
+
+        {/* button to submit form */}
+        <Button type="submit" fullWidth isLoading={isSubmitting} className="bg-secondary">
+          Log In
+        </Button>
       </form>
     </div>
   )
