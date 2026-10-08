@@ -1,5 +1,5 @@
 
-// TYPE (labels) allowed values 
+// TYPE (labels) allowed values our backend sends
 
   // types
 export type PostStatus = 'idea' | 'draft' | 'writing' | 'editing' | 'filming' | 'scheduled' | 'posted' ;
