@@ -65,7 +65,7 @@ function saveSession(data: AuthResponse) {
 
   // logging out
   function logout() {
-    localStorage.removeItem.('token');
+    localStorage.removeItem('token');
     setUser(null);
   }
 
