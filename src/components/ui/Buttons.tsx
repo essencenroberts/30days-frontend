@@ -4,7 +4,7 @@ import type { ButtonHTMLAttributes } from "react";
 
 // button props
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: 'primary' | 'secondary' | 'ghost' | 'danger';
+  variant?: 'primary' | 'secondary' | 'ghost' | 'danger' | 'other';
   fullWidth?: boolean;
   isLoading?: boolean;
 }
@@ -14,6 +14,7 @@ const variantClasses: Record<NonNullable<ButtonProps['variant']>, string> = {
   secondary: 'bg-accent border-2 border-ink bg-white text-ink hover:bg-gray-100',
   ghost: 'bg-transparent text-ink hover:bg-gray-100',
   danger: 'bg-red-700 text-white hover:bg-red-800',
+  other: 'bg-orange-800 text-ink hover:bg-orange-800', 
 };
 
 function Button({
@@ -31,7 +32,7 @@ function Button({
       type={type}
       disabled={disabled || isLoading}
       className={[
-        'inline-flex min-h-11 items-center justify-center rounded-full px-5 text-sm font-semibolld transition',
+        'inline-flex min-h-11 items-center justify-center rounded-full px-5 text-sm font-semibolld transition bg-orange-600',
         'disabled: cursor-not-allowed disabled:opacity-60',
         variantClasses[variant],
         fullWidth ? 'w-full' : '',

@@ -98,7 +98,7 @@ function Login() {
       </form>
 
       {/* if they already have an accouunt link to login page */}
-      <p> Don't have an account? {''}
+      <p className="text-center">Have an account? {''}
         <Link to='/login' className='font-semibold text-brand-dark hover:underline'>
          Log in
         </Link>

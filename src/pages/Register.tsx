@@ -147,13 +147,13 @@ function Register() {
         )}
 
         {/* button to create account  */}
-        <Button type="submit" fullWidth isLoading={isSubmitting} className="bg-accent">
-          Create account
+        <Button type="submit" fullWidth isLoading={isSubmitting}  variant="primary">
+          Create Account
         </Button>
       </form>
 
        {/* if they already have an accouunt link to login page */}
-      <p> Already have an account? {''}
+      <p className="text-center"> Already have an account? {''}
         <Link to='/login' className='font-semibold text-brand-dark hover:underline'>
          Log in
         </Link>
