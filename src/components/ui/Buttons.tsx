@@ -1,4 +1,4 @@
-// reusable button with different looks for edit, delete, save, add etc
+// reusable button with different looks for edit, delete, save, add etc 
 
 import type { ButtonHTMLAttributes } from "react";
 
