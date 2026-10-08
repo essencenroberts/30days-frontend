@@ -10,7 +10,7 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 }
 // tailwdind classes for the different styles
 const variantClasses: Record<NonNullable<ButtonProps['variant']>, string> = {
-  primary: 'bg-brand text-white hover:bg-brand-dark',
+  primary: 'bg-brand text-ink hover:bg-brand-accent',
   secondary: 'bg-accent border-2 border-ink bg-white text-ink hover:bg-gray-100',
   ghost: 'bg-transparent text-ink hover:bg-gray-100',
   danger: 'bg-red-700 text-white hover:bg-red-800',

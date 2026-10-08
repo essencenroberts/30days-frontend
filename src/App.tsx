@@ -26,15 +26,17 @@ function App() {
 
   return (
     <>
-      <h1 className='m-5 p-5 font-bold font-3xl'>30Days</h1>
       <Routes>
         <Route path='/' element={<Navigate to='/dashboard' replace />} />
 
         {/* // logged out - Public only routes */}
         <Route element={<PublicRoute />}>
-          <Route  path='/login' element={<Login />}/>
+          <Route element={<PublicLayout />}>
+            <Route  path='/login' element={<Login />}/>
 
-          <Route path='/register' element={<Register />} />
+            <Route path='/register' element={<Register />} />
+          </Route>
+          
         </Route>
 
 
