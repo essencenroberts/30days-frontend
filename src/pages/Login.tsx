@@ -98,9 +98,9 @@ function Login() {
       </form>
 
       {/* if they already have an accouunt link to login page */}
-      <p className="text-center">Have an account? {''}
-        <Link to='/login' className='font-semibold text-brand-dark hover:underline'>
-         Log in
+      <p className="text-center">Don't have an account? {''}
+        <Link to='/register' className='font-semibold text-brand-dark hover:underline'>
+         Sign Up
         </Link>
       </p>
     </div>
