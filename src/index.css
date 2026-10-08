@@ -1,1 +1,24 @@
 @import 'tailwindcss';
+
+/*
+@theme: 30Days Design
+bg-brand - > orange
+bg-accent golden yellow hover + gradient
+text-brand-dark - darker orange text links
+bg-brand-light yelllow or gradient orange to yelllow softbackgrounds
+
+*/
+
+@theme {
+  --color-brand: #E86A00;
+  --color-accent: #E9BC26;
+  --color-brand-dark: #B85300;
+  --color-brand-light: #FCE430;
+  --color-ink: #111111;
+
+}
+
+body {
+  background-color: #ffffff;
+  color: var(--color-ink);
+}
