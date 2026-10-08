@@ -10,7 +10,7 @@ import Button from "../components/ui/Buttons";
 import Input from "../components/ui/Input";
 
 function Login() {
-  const { login } = useAuth;
+  const { login } = useAuth();
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -96,6 +96,13 @@ function Login() {
           Log In
         </Button>
       </form>
+
+      {/* if they already have an accouunt link to login page */}
+      <p> Don't have an account? {''}
+        <Link to='/login' className='font-semibold text-brand-dark hover:underline'>
+         Log in
+        </Link>
+      </p>
     </div>
   )
 }

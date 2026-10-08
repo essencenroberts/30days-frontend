@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import type { SubmitEvent } from "react";
-import { Link, replace, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import useAuth from "../hooks/useAuth";
 import { getErrorMessage } from "../api/client";
 import Button from "../components/ui/Buttons";
@@ -49,7 +49,7 @@ function validate(values: FormValues): FormErrors {
 
 function Register() {
   const { register } = useAuth();
-  const { navigate } = useNavigate();
+  const navigate  = useNavigate();
 
   // useState for all fields as object
   const [values, setValues] = useState<FormValues>({

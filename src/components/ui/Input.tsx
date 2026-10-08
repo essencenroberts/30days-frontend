@@ -25,7 +25,8 @@ function Input({ label, error, helperText, id, className ='', ...rest}: InputPro
 
       <input
         id={inputId}
-        aria-invalid={error || helperText ? messageId : undefined}
+        aria-invalid={error ? true: undefined}
+        aria-describedby={error || helperText ? messageId : undefined}
         className={[
           'min-h-12 rounded-xl border bg-white px-4 text-base',
           'focus:border-brand focus:ring-2 focus:ring-brand-light focus:outline-none',
