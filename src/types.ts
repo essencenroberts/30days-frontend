@@ -91,3 +91,14 @@ export interface Post {
   updatedAt: string;
 
 }
+
+//  labels for status
+export const STATUS_LABELS: Record<PostStatus, string> = {
+  idea: 'Idea',
+  draft: 'Draft',
+  writing: 'Writing',
+  filming: 'Filming',
+  editing: 'Editing', 
+  scheduled: 'Scheduled',
+  posted: 'Posted',
+};

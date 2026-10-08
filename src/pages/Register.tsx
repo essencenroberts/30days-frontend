@@ -31,7 +31,7 @@ function validate(values: FormValues): FormErrors {
   }
 
   // email error
-  if (!/^\S+\.\S+$/.test(values.email.trim())) {
+  if (!/^\S+@\S+\.\S+$/.test(values.email.trim())) {
     errors.email = 'Please enter a valid email.';
   }
 
