@@ -15,7 +15,7 @@ function Login() {
   const location = useLocation();
 
   // use state for email , password, errors, and when it submits
-  const [email, setEmail] = useState('');
+  const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -33,7 +33,7 @@ function Login() {
     setError('');
 
     // check no fields are emoty
-    if (!email.trim() || !password) {
+    if (!username.trim() || !password) {
       setError('Please enter your email and password.')
       return;
     }
@@ -41,7 +41,7 @@ function Login() {
     try {
       // show loaading state and login
       setIsSubmitting(true);
-      await login(email.trim(), password);
+      await login(username.trim(), password);
 
       // redirect to Dashboard
       navigate(redirectedFrom || '/dashboard', { replace: true});
@@ -57,9 +57,9 @@ function Login() {
 
 
   return (
-    <div className="w-full max-w-md rounded-3xl bg-yellow-100 p-8 shadow-sm">
-      <h1 className="text-3xl text-orange-600 font-extrabold">Log In</h1>
-      <p className="mt-2 text-orange-400">Welcome Back. Your Goals Missed You</p>
+    <div className="w-full max-w-md m-25 rounded-3xl bg-white text-orange-400 p-8 shadow-sm border border-1">
+      <h1 className="text-3xl text-orange-600 font-extrabold text-center">Log In</h1>
+      <p className="mt-2 text-orange-400 text-center">Welcome Back. Your Goals Missed You</p>
 
       {/* if not logged in message */}
       {redirectedFrom && (
@@ -69,11 +69,10 @@ function Login() {
       {/* form + noValidate to turn off browser default */}
       <form onSubmit={handleSubmit} noValidate className="mt-6 flex flex-col gap-4">
         <Input 
-          label="Email"
-          type="email"
-          autoComplete="email"
-          value={email}
-          onChange={(event) => setEmail(event.target.value)}
+          label="Username"
+          autoComplete="username"
+          value={username}
+          onChange={(event) => setUsername(event.target.value)}
         />
 
         <Input 
@@ -93,7 +92,7 @@ function Login() {
         )}
 
         {/* button to submit form */}
-        <Button type="submit" fullWidth isLoading={isSubmitting} className="bg-secondary">
+        <Button type="submit" fullWidth isLoading={isSubmitting} className="bg-accent">
           Log In
         </Button>
       </form>
