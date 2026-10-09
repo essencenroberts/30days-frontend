@@ -2,7 +2,7 @@
 
 **Plan it. Post it. Track it.**
 
-**30Daysg** helps content creators plan and finish posting challenges, like "30 Reels in 30 Days." You create a challenge, plan a post for each day, move each post through its stages (idea → writing → filming → editing → scheduled → posted), and watch your progress and streak grow.
+**30Days** helps content creators plan and finish posting challenges, like "30 Reels in 30 Days." You create a challenge, plan a post for each day, move each post through its stages (idea → writing → filming → editing → scheduled → posted), and watch your progress and streak grow.
 
 This repo is the **frontend**: the part of the app you see and click. It talks to a separate **backend** API that stores the data.
 
@@ -11,12 +11,6 @@ This repo is the **frontend**: the part of the app you see and click. It talks t
 - **Backend repo:** [(https://github.com/essencenroberts/30days-backend)]
 
 > **Heads up:** The app is hosted on Render's free plan. If nobody has used it in a while, the first load can take up to a minute while the server wakes up. After that, it's fast.
-
----
-
-## Screenshots
-
-[ADD SCREENSHOTS HERE: Dashboard, Challenge Plan (Grid), Board view, Post Editor]
 
 ---
 
