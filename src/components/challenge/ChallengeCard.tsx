@@ -18,7 +18,7 @@ interface ChallengeCardProps {
 }
 
 // function
-function ChallngeCard({ challenge }: ChallengeCardProps) {
+function ChallengeCard({ challenge }: ChallengeCardProps) {
 
   // stats
   const { stats } = challenge;
@@ -73,4 +73,4 @@ function ChallngeCard({ challenge }: ChallengeCardProps) {
   );
 }
 
-export default ChallngeCard;
+export default ChallengeCard;

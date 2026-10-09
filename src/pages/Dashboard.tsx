@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import useChallenges from "../hooks/useChallenges";
-import ChallngeCard from "../components/challenge/ChallengeCard";
+import ChallengeCard from "../components/challenge/ChallengeCard";
 import Loader from "../components/ui/Loader";
 import ErrorMessage from "../components/ui/ErrorMessage";
 import StatusPill from "../components/challenge/StatusPill";

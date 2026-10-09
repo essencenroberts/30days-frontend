@@ -102,3 +102,12 @@ export const STATUS_LABELS: Record<PostStatus, string> = {
   scheduled: 'Scheduled',
   posted: 'Posted',
 };
+
+// NewChallenges type data to create orupdate a challenge
+export interface NewChallengeData {
+  challengeName: string;
+  description: string;
+  startDate: string;
+  lengthInDays: number;
+  postPerDay: number;
+}
