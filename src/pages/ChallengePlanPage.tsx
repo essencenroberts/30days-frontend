@@ -75,8 +75,8 @@ function ChallengePlan() {
           </Link>
           <h1>{challenge.challengeName}</h1>
           <p className="mt-1 text-gray-600">
-            {formatDate(challenge.startDate)} - {formatDate(challenge.endDate)} * {challenge.postsPerDay}{' '}
-            {challenge.postsPerDay === 1 ? 'post' : 'posts'}/day
+            {formatDate(challenge.startDate)} - {formatDate(challenge.endDate)} * {challenge.postPerDay}{' '}
+            {challenge.postPerDay === 1 ? 'post' : 'posts'}/day
           </p>
         </div>
 

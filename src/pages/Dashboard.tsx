@@ -144,22 +144,6 @@ function Dashboard() {
       </>
       )
     }
-
-
-      {/* {!loading && !error && challenges.length === 0 && (
-        <EmptyState 
-          title="No challenges started yet"
-          message="Plan your first content challenge and reach your goals"
-          action={<Link to="/challenges/new" className="font-semibold text-brand-dark underline">Create a challenge</Link>}
-        />
-      )}
-
-      {!loading && !error && challenges.length > 0 && (
-        <div className="grid gap-5 sm:grid-cols-2 lg:gric-cols-3">
-          {challenges.map((challenge) => (
-            <ChallngeCard key={challenge._id} challenge={challenge} />
-          ))} */}
-
     </div>
   );
 }

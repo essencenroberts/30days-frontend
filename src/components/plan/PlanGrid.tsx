@@ -30,7 +30,7 @@ function PlanGrid({ challenge, postsByDay }: PlanGridProps) {
             dayNumber={dayNumber}
             date={getDayDate(challenge.startDate, dayNumber)}
             posts={postsByDay[dayNumber] ?? []}
-            postPerDay={challenge.postsPerDay}
+            postPerDay={challenge.postPerDay}
             isToday={dayNumber === todayDayNumber}
           />
         ))}

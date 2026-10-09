@@ -61,7 +61,7 @@ export interface Challenge {
   description: string;
   startDate: string;
   lengthInDays: number;
-  postsPerDay: number;
+  postPerDay: number;
   owner: string;
   collaborators: string[];
   endDate: string;

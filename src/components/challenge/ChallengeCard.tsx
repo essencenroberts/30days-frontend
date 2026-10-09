@@ -25,7 +25,7 @@ function ChallengeCard({ challenge }: ChallengeCardProps) {
 
   return (
     <Link 
-      to={`/challnges/${challenge._id}`}
+      to={`/challenges/${challenge._id}`}
       className="flex flex-col gap-4 rounded-3xl border border-gray-200 bg-white p-6 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
     > 
       {/* row wih name and status  */}
@@ -33,8 +33,8 @@ function ChallengeCard({ challenge }: ChallengeCardProps) {
         <div>
           <h2 className="text-lg font-bold text-ink">{challenge.challengeName}</h2>
           <p className="text-sm text-gray-600">
-            {formatDate(challenge.startDate)} - {formatDate(challenge.endDate)} * {challenge.postsPerDay}{' '}
-            {challenge.postsPerDay === 1 ? 'post' : 'posts'}/day
+            {formatDate(challenge.startDate)} - {formatDate(challenge.endDate)} * {challenge.postPerDay}{' '}
+            {challenge.postPerDay === 1 ? 'post' : 'posts'}/day
           </p>
         </div>
         {stats && (

@@ -20,6 +20,7 @@ import PostEditor from './pages/PostEditor';
 import NotFound from './pages/NotFoundPage';
 import ChallengePlan from './pages/ChallengePlanPage';
 import Home from './pages/Home';
+import EditChallenge from './pages/EditChallenge';
 
 
 function App() {
@@ -51,7 +52,9 @@ function App() {
          
             <Route path='/challenges/:challengeId' element={<ChallengePlan />} />
 
-            <Route path='/challenes/:challenegeId/posts/new' element={<PostEditor />} />
+            <Route path='/challenges/:challengeId/edit' element={<EditChallenge />} />
+
+            <Route path='/challenges/:challengeId/posts/new' element={<PostEditor />} />
 
             <Route path='/challenges/:challengeId/posts/:postId' element={<PostEditor />} /> 
            </Route>
