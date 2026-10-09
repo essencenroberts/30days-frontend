@@ -1,4 +1,4 @@
-import { seParams, useNavigate, useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import useChallenge from "../hooks/useChallenge";
 import { useState } from "react";
 import ErrorMessage from "../components/ui/ErrorMessage";
