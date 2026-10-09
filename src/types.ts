@@ -111,3 +111,16 @@ export interface NewChallengeData {
   lengthInDays: number;
   postPerDay: number;
 }
+
+// data SEND to create or update post
+export interface PostFields{
+  dayNumber: number;
+  postTime: string;
+  title: string;
+  caption: string;
+  platform: string;
+  contentType: string;
+  status: PostStatus;
+  link: string;
+
+}

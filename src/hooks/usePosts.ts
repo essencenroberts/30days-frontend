@@ -1,4 +1,4 @@
-// usePost to get all post for one challenge
+// usePosts to get all post for one challenge
 
 import type { Post } from "../types";
 import useFetch from "./useFetch";
