@@ -33,7 +33,7 @@ function AppHeader() {
 
          {/* nav links */}
         <nav>
-          <NavLink to='/dashborad' className={navLinkClasses}>Dashboard</NavLink>
+          <NavLink to='/dashboard' className={navLinkClasses}>Dashboard</NavLink>
           <NavLink to='/challenges/new' className={navLinkClasses}>New Challenge</NavLink>
         </nav> 
 

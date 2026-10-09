@@ -5,6 +5,7 @@ import Loader from "../components/ui/Loader";
 import ErrorMessage from "../components/ui/ErrorMessage";
 import StatusPill from "../components/challenge/StatusPill";
 import { POST_STATUSES } from "../types";
+import EmptyState from "../components/ui/EmptyState";
 
 
 // placeholder check if routes work
@@ -16,11 +17,11 @@ function Dashboard() {
   const { challenges, loading, error, refetch } = useChallenges();
 
   return (
-    <div>
+    <div className="flex flex-col gap-6">
       <h1 className="p-8 text-3xl font-bold">Dashboard test</h1>
 
       {/* status pill  */}
-      <div>
+      <div className="flex flex-wrap gap-2">
         {POST_STATUSES.map((status) => (
           <StatusPill key={status} status={status} />
         ))}
@@ -39,7 +40,7 @@ function Dashboard() {
       )}
 
       {!loading && !error && challenges.length > 0 && (
-        <div className="">
+        <div className="grid gap-5 sm:grid-cols-2 lg:gric-cols-3">
           {challenges.map((challenge) => (
             <ChallngeCard key={challenge._id} challenge={challenge} />
           ))}
