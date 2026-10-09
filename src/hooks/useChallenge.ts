@@ -1,6 +1,6 @@
 // get 1 challenge by ID and show stats
-import { ref } from "process";
-import type { Challenge } from "../types";import { getTodayString } from "../utils/dates";
+import type { Challenge } from "../types";
+import { getTodayString } from "../utils/dates";
 import useFetch from "./useFetch";
 
 

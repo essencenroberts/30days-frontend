@@ -54,5 +54,7 @@ function Textarea({ label, error, showCount = false, id, maxLength, value, class
         )}
       </div>
     </div>
-  )
+  );
 }
+
+export default Textarea;
