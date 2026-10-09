@@ -64,9 +64,10 @@ function Home() {
         <div className="flex flex-col gap-5">
           <p className="font-semibold text-brand-dark">Consistency looks good on you</p>
 
-          <h1 className="text-4xl font-extrabold text-orange-500 sm:text-5xl">Stop starting over. This time, you finish!</h1>
+          <h1 className="text-4xl font-extrabold text-orange-500 sm:text-5xl">Stop starting over. <span></span>
+          This time finish!</h1>
 
-          <p className="max-w-xl text-lg text-gray-700 font-medium">30Days helps creators and small businesses plan a post for every day, move eahc one from idea to posted, and keep their streak alive, all in one place.</p>
+          <p className="max-w-xl text-lg text-gray-700 ">30Days helps creators and small businesses plan a post for every day, move each one from idea to posted, and keep their streak alive, all in one place.</p>
 
           {/* buttons */}
           <div className="flex flex-wrap gap-3">
@@ -144,12 +145,12 @@ function Home() {
         </h2>
 
         <p className="max-w-lg text-ink">
-          Give yourself one month of hsowing up intentionally and consistently. Your future audience is waiting.
+          Give yourself one month of showing up intentionally and consistently. Your future audience is waiting.
         </p>
 
         <Link
           to="/register"
-          className="inline-flex min-h-12 items-center justify-center rounded-full px-6 font-semibold text-white transition hover:bg-gray-800"
+          className="inline-flex min-h-12 items-center justify-center rounded-full px-6 font-semibold text-orange-500 bg-white transition hover:bg-gray-500"
         >
           Let's go
         </Link>
