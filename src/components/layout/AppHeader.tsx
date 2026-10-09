@@ -20,14 +20,14 @@ function AppHeader() {
   // log out - clear token & user then go back to login page
   function handleLogout() {
     logout();
-    navigate('/');
+    navigate('/login');
   }
 
   return (
     <header className="border-b border-gray-200 bg0white">
       <div className="mx-auto flex mac-w-6xl flex-wrap items-center justify-between gap-4 px-4 py-3 sm:px-6">
           {/* logo */}
-        <Link to='/dashboard' className="text-brand text-2xl font-extrabold text-ink">
+        <Link to='/' className="text-brand text-2xl font-extrabold text-ink">
           30Days
         </Link>
 
