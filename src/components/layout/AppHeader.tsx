@@ -20,7 +20,7 @@ function AppHeader() {
   // log out - clear token & user then go back to login page
   function handleLogout() {
     logout();
-    navigate('/login');
+    navigate('/');
   }
 
   return (
