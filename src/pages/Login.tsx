@@ -15,7 +15,7 @@ function Login() {
   const location = useLocation();
 
   // use state for email , password, errors, and when it submits
-  const [username, setUsername] = useState('');
+  const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -33,7 +33,7 @@ function Login() {
     setError('');
 
     // check no fields are emoty
-    if (!username.trim() || !password) {
+    if (!email.trim() || !password) {
       setError('Please enter your email and password.')
       return;
     }
@@ -41,7 +41,7 @@ function Login() {
     try {
       // show loaading state and login
       setIsSubmitting(true);
-      await login(username.trim(), password);
+      await login(email.trim(), password);
 
       // redirect to Dashboard
       navigate(redirectedFrom || '/dashboard', { replace: true});
@@ -69,10 +69,10 @@ function Login() {
       {/* form + noValidate to turn off browser default */}
       <form onSubmit={handleSubmit} noValidate className="mt-6 flex flex-col gap-4">
         <Input 
-          label="Username"
-          autoComplete="username"
-          value={username}
-          onChange={(event) => setUsername(event.target.value)}
+          label="Email"
+          autoComplete="email"
+          value={email}
+          onChange={(event) => setEmail(event.target.value)}
         />
 
         <Input 
