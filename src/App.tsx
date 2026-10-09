@@ -19,6 +19,7 @@ import NewChallenge from './pages/NewChallenge';
 import PostEditor from './pages/PostEditor';
 import NotFound from './pages/NotFoundPage';
 import ChallengePlan from './pages/ChallengePlanPage';
+import Home from './pages/Home';
 
 
 function App() {
@@ -27,11 +28,12 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path='/' element={<Navigate to='/dashboard' replace />} />
+        {/* <Route path='/' element={<Navigate to='/dashboard' replace />} /> replace with Home */}
 
         {/* // logged out - Public only routes */}
         <Route element={<PublicRoute />}>
           <Route element={<PublicLayout />}>
+            <Route path="/" element={<Home />} />
             <Route  path='/login' element={<Login />}/>
 
             <Route path='/register' element={<Register />} />
