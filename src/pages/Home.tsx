@@ -12,19 +12,19 @@ const FEATURES = [
   {
     icon: '🗓️',
     title: 'Plan every day',
-    text: 'Turn a goal ike "30 Reels in 30 Days" into a day-by-day plan you can see at a glance.',
+    text: 'Turn "30 Reels in 30 Days" from a big idea into a day-by-day plan. No more waking up wondering what to post',
   },
 
   {
     icon: '⌛️' ,
     title: 'Track every stage',
-    text: 'Move each post from idea to draft, writing, filming, editing, scheduled, or posted'
+    text: 'Move each post from idea to draft, writing, filming, editing, scheduled, or posted. Nothing gets lost in your notes app again.'
   },
 
    {
     icon: '🔥',
     title: 'Keep your streak going',
-    text: 'Watch your progress bar fill up and your streak grow every day you hit your goal',
+    text: 'Hit your goal for the day and watch it turn green. Your progress shows up, so you keep showing up.',
   },
 ];
 
@@ -32,17 +32,17 @@ const STEPS = [
    {
    
     title: 'Create a challenge',
-    text: 'Pick the length of your challenge, your start date and how many posts per day',
+    text: 'Pick the length of your challenge, your start date and how many posts per day. You set the pace.',
   },
   {
    
-    title: 'Plan your posts',
-    text: 'Add a title, platform, and caption or script to each day',
+    title: 'Plan your content',
+    text: 'Add a title, platform, hooks and caption or script to each day',
   },
   {
    
-    title: 'Post and track your progress',
-    text: 'Mark posts as posted and watch your reach your goals',
+    title: 'Post it and own it',
+    text: 'Mark posts as posted and watch your reach your goals. Let your growth speak for itself.',
   },
 ];
 
@@ -62,15 +62,15 @@ function Home() {
     {/* hero section  */}
       <section className="grid items-center gap-10 lg:grid-cols-2">
         <div className="flex flex-col gap-5">
-          <p className="font-semibold text-brand-dark">Plan Post Track</p>
+          <p className="font-semibold text-brand-dark">Consistency looks good on you</p>
 
-          <h1 className="text-4xl font-extrabold text-orange-500 sm:text-5xl">Finish your next 30 Day Content Challenge</h1>
+          <h1 className="text-4xl font-extrabold text-orange-500 sm:text-5xl">Stop starting over. This time, you finish!</h1>
 
           <p className="max-w-xl text-lg text-gray-700 font-medium">30Days helps creators and small businesses plan a post for every day, move eahc one from idea to posted, and keep their streak alive, all in one place.</p>
 
           {/* buttons */}
           <div className="flex flex-wrap gap-3">
-            <Link to="/register" className={primaryLinkClasses}>Start your challenge</Link>
+            <Link to="/register" className={primaryLinkClasses}>Start My 30 Days</Link>
 
             <Link to="/login" className={secondaryLinkClasses}>Log in</Link>
           </div>
@@ -105,7 +105,7 @@ function Home() {
 
       <section aria-labelledby="features-heading" className="flex flex-col gap-8">
         <h2 id="features-heading" className="text-center text-3xl font-extrabold text-ink">
-          Everything you need to stay consistent
+          Built for creators who are done falling off
         </h2>
 
         <div>
@@ -140,18 +140,18 @@ function Home() {
       {/* call to action */}
       <section className="flex flex-col items-center gap-5 rounded-3xl bg-linear-to-r from-brand to-accent px-6 py-12 text-center">
         <h2 className="text-3xl font-extrabold text-ink">
-          Your next 30 days starts now.
+          Your 30 days starts today.
         </h2>
 
         <p className="max-w-lg text-ink">
-          Create a free account and plan your first challenge in under a minute.
+          Give yourself one month of hsowing up intentionally and consistently. Your future audience is waiting.
         </p>
 
         <Link
           to="/register"
           className="inline-flex min-h-12 items-center justify-center rounded-full px-6 font-semibold text-white transition hover:bg-gray-800"
         >
-          Start free
+          Let's go
         </Link>
       </section>
     </div>

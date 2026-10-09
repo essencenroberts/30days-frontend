@@ -1,6 +1,6 @@
 // import { useState } from 'react''
 import './App.css'
-import { Navigate, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 
 // monitor
 import ProtectedRoute from './components/routes/ProtectedRoute';
